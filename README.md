@@ -49,15 +49,15 @@ I deliberately did not include meanFreq measurements. This was my interpretation
 ## Explaining the code in "run_analysis.R"
 1. Downloads the following file if not found in your working directory:
    https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-   +The file is then unzipped.
+   ...The file is then unzipped.
 2. Reads the following data files into R data frames:
-   +"UCI HAR Dataset\\test\\subject_test.txt"
-   +"UCI HAR Dataset\\test\\X_test.txt"
-   +"UCI HAR Dataset\\test\\y_test.txt"
-   +"UCI HAR Dataset\\train\\subject_train.txt"
-   +"UCI HAR Dataset\\train\\X_train.txt"
-   +"UCI HAR Dataset\\train\\y_train.txt"
-   Note: X_test.txt and X_train.txt are fixed width formatted and are read in using read.fwf. The others were read in using read.table
+   ..."UCI HAR Dataset\\test\\subject_test.txt"
+   ..."UCI HAR Dataset\\test\\X_test.txt"
+   ..."UCI HAR Dataset\\test\\y_test.txt"
+   ..."UCI HAR Dataset\\train\\subject_train.txt"
+   ..."UCI HAR Dataset\\train\\X_train.txt"
+   ..."UCI HAR Dataset\\train\\y_train.txt"
+   ...Note: X_test.txt and X_train.txt are fixed width formatted and are read in using read.fwf. The others were read in using read.table
 3. The training and test sets are then combined using rbind() to form the following data frames:
     +df_subjects_merged  
     +df_measures_merged  
