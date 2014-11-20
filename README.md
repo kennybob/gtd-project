@@ -17,7 +17,7 @@ gtd-project
 The way I see it, the data already satisfies these principles. 
 
 We could of course melt the data down to a fomat like this:
-   +experiment_id, subject, activity, measure_name, measure_value
+   * experiment_id, subject, activity, measure_name, measure_value
 
 According to the grading guidelines on the project submission page:
 "Either a wide or a long form of the data is acceptable if it meets the tidy data principles of week 1"
@@ -28,10 +28,10 @@ The assignment asks that the script:
 "Extracts only the measurements on the **mean** and standard deviation for each measurement".
 
 According to features_info.txt:
-   +mean(): Mean value
-   +std(): Standard deviation
-   +..
-   +meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+   * mean(): Mean value
+   * std(): Standard deviation
+   * ..
+   * meanFreq(): Weighted average of the frequency components to obtain a mean frequency
 
 I deliberately did not include meanFreq measurements. This was my interpretation of what was required.
 
@@ -49,19 +49,19 @@ I deliberately did not include meanFreq measurements. This was my interpretation
 ## Explaining the code in "run_analysis.R"
 1. Downloads the following file if not found in your working directory:
    https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-   ...The file is then unzipped.
+   * The file is then unzipped.
 2. Reads the following data files into R data frames:
-   ..."UCI HAR Dataset\\test\\subject_test.txt"
-   ..."UCI HAR Dataset\\test\\X_test.txt"
-   ..."UCI HAR Dataset\\test\\y_test.txt"
-   ..."UCI HAR Dataset\\train\\subject_train.txt"
-   ..."UCI HAR Dataset\\train\\X_train.txt"
-   ..."UCI HAR Dataset\\train\\y_train.txt"
-   ...Note: X_test.txt and X_train.txt are fixed width formatted and are read in using read.fwf. The others were read in using read.table
+   * "UCI HAR Dataset\\test\\subject_test.txt"
+   * "UCI HAR Dataset\\test\\X_test.txt"
+   * "UCI HAR Dataset\\test\\y_test.txt"
+   * "UCI HAR Dataset\\train\\subject_train.txt"
+   * "UCI HAR Dataset\\train\\X_train.txt"
+   * "UCI HAR Dataset\\train\\y_train.txt"
+   * Note: X_test.txt and X_train.txt are fixed width formatted and are read in using read.fwf. The others were read in using read.table
 3. The training and test sets are then combined using rbind() to form the following data frames:
-    +df_subjects_merged  
-    +df_measures_merged  
-    +df_activities_merged   
+   * df_subjects_merged  
+   * df_measures_merged  
+   * df_activities_merged   
 4. The contents of "UCI HAR Dataset\\features.txt" are read into a data frame (df_features) so that we could extract the columns we are interested in.
 5. Then used the grep() function to create an index on df_features. The index shows us where the columns containing mean() and std() are. The index is sorted in order to preserve the order of the columns in features.txt
 6. This index is used to extract the columns we want from our merged dataset df_measures_merged. The new cut down data frame is called df_merged_filtered.
