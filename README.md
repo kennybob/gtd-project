@@ -2,14 +2,14 @@ gtd-project
 ===========
 
 ## Steps completed in run_analysis.R
-1. Merges the training and the test sets to create one data set.
-2. Extracts only the measurements on the mean and standard deviation for each measurement. 
-3. Uses descriptive activity names to name the activities in the data set
-4. Appropriately labels the data set with descriptive variable names. 
-5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+1. Merged the training and the test sets to create one data set.
+2. Extracted only the measurements on the mean and standard deviation for each measurement. 
+3. Used descriptive activity names to name the activities in the data set
+4. Appropriately labeled the data set with descriptive variable names. 
+5. From the data set in step 4, created a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ## My interpretation of "tidy data" in the context of this data
-According to the lectures, the principles of Tidy Data are:
+####According to the lectures, the principles of Tidy Data are
 1. Each variable forms a column
 2. Each observation forms a row
 3. Each table/file stores data about one kind of observation
@@ -24,8 +24,9 @@ According to the grading guidelines on the project submission page:
    
 
 ## My interpretation of mean
-The assignment asks that we:
-"Extracts only the measurements on the **mean** and standard deviation for each measurement"
+The assignment asks that the script:
+"Extracts only the measurements on the **mean** and standard deviation for each measurement".
+
 According to features_info.txt:
    mean(): Mean value
    std(): Standard deviation
@@ -34,7 +35,7 @@ According to features_info.txt:
 
 I deliberately did not include meanFreq measurements. This was my interpretation of what was required.
 
-##Contents of the Repp
+##Contents of the Repo
 1. README.md      = Explains my interpretations and steps for running my script
 2. CodeBook.md    = This file describes the variables, the data, and any transformations or work  performed to clean up the data
 3. run_analysis.R = This is the R script that processes the data and creates tidyMeans.txt as output.
@@ -45,7 +46,7 @@ I deliberately did not include meanFreq measurements. This was my interpretation
    Bear in mind that some time to read in X_test.txt and X_train.txt (it helps if you have a lot of RAM)
 3. It should produce tidyMeans.txt
 
-## What does run_analysis.R do in plain English?
+## Explaining the code in "run_analysis.R"
 1. Downloads the following file if not found in your working directory:
    https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
    Unzips the file.
