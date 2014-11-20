@@ -5,11 +5,11 @@ Data dictionary for file: tidyMeans.txt
 Variables:
 "WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS","SITTING","STANDING","LAYING"
 
-1. * "SubjectID"                                  
-   * Numeric(1-30)
+1. Variable name: "SubjectID"                                  
+   * Data type: Numeric(1-30)
      
-2  * "activity"
-   * Character 
+2. Variable name: "activity"
+   * Data type: Character 
    * Discrete set: {"WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS","SITTING","STANDING","LAYING"}
      
 *  3  "Time_Body_Accelerometer_mean_X"              
