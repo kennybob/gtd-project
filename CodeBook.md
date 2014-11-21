@@ -13,80 +13,76 @@ Data dictionary for file: tidyMeans.txt
  * Data Source: test\y_test.txt, train\y_train.txt  
  * Transformed using: Mapping provided in activity_labels.txt    
  
-### Each of the following variables have as attributes:
+##### Each of the following variables have as attributes:
  * Data type: Numeric
  * Range: normalized and bounded within [-1,1]
  * Source: test\X_test.txt, train\X_train.txt 
 
-| Variable #    | Variable name         | Original name in features.txt  |
-| ------------- |-----------------------| -------------------------------|
-| 3             | xxxxxxxxxxxxx         | ffffffffffffffffffffffffffffff |
-| 4             | rtrtertert            | cgvfdgfdgfd                    |
-| 4             | are neat              | fgfffffffffffffffffffffffffffff|
- 
-3. Variable name: "Time_Body_Accelerometer_mean_X"                                                                
-4. Variable name: "Time_Body_Accelerometer_mean_Y"                                                               
-5. Variable name: "Time_Body_Accelerometer_mean_Z"              
-6. Variable name: "Time_Body_Accelerometer_std_X"               
-7. Variable name: "Time_Body_Accelerometer_std_Y"
-8. Variable name: "Time_Body_Accelerometer_std_Z"                                                
-9. Variable name: "Time_Gravity_Accelerometer_mean_X"            
-10. Variable name: "Time_Gravity_Accelerometer_mean_Y"            
-11. Variable name: "Time_Gravity_Accelerometer_mean_Z"            
-12. Variable name: "Time_Gravity_Accelerometer_std_X"             
-13. Variable name: "Time_Gravity_Accelerometer_std_Y"             
-14. Variable name: "Time_Gravity_Accelerometer_std_Z"             
-15. Variable name: "Time_Body_Accelerometer_Jerk_mean_X"          
-16. Variable name: "Time_Body_Accelerometer_Jerk_mean_Y"          
-17. Variable name: "Time_Body_Accelerometer_Jerk_mean_Z"          
-18. Variable name: "Time_Body_Accelerometer_Jerk_std_X"           
-19. Variable name: "Time_Body_Accelerometer_Jerk_std_Y"           
-20. Variable name: "Time_Body_Accelerometer_Jerk_std_Z"           
-21. Variable name: "Time_Body_Gyroscope_mean_X"    
-22. Variable name: "Time_Body_Gyroscope_mean_Y"    
-23. Variable name: "Time_Body_Gyroscope_mean_Z"    
-24. Variable name: "Time_Body_Gyroscope_std_X"     
-25. Variable name: "Time_Body_Gyroscope_std_Y"     
-26. Variable name: "Time_Body_Gyroscope_std_Z"     
-27. Variable name: "Time_Body_Gyroscope_Jerk_mean_X"              
-28. Variable name: "Time_Body_Gyroscope_Jerk_mean_Y"              
-29. Variable name: "Time_Body_Gyroscope_Jerk_mean_Z"              
-30. Variable name: "Time_Body_Gyroscope_Jerk_std_X"
-31. Variable name: "Time_Body_Gyroscope_Jerk_std_Y"
-32. Variable name: "Time_Body_Gyroscope_Jerk_std_Z"
-33. Variable name: "Time_Body_Accelerometer_Mag_mean"             
-34. Variable name: "Time_Body_Accelerometer_Mag_std"              
-35. Variable name: "Time_Gravity_Accelerometer_Mag_mean"          
-36. Variable name: "Time_Gravity_Accelerometer_Mag_std"           
-37. Variable name: "Time_Body_Accelerometer_JerkMag_mean"         
-38. Variable name: "Time_Body_Accelerometer_JerkMag_std"          
-39. Variable name: "Time_Body_Gyroscope_Mag_mean"  
-40. Variable name: "Time_Body_Gyroscope_Mag_std"   
-41. Variable name: "Time_Body_Gyroscope_JerkMag_mean"             
-42. Variable name: "Time_Body_Gyroscope_JerkMag_std"              
-43. Variable name: "Frequency_Body_Accelerometer_mean_X"          
-44. Variable name: "Frequency_Body_Accelerometer_mean_Y"          
-45. Variable name: "Frequency_Body_Accelerometer_mean_Z"          
-46. Variable name: "Frequency_Body_Accelerometer_std_X"           
-47. Variable name: "Frequency_Body_Accelerometer_std_Y"           
-48. Variable name: "Frequency_Body_Accelerometer_std_Z"           
-49. Variable name: "Frequency_Body_Accelerometer_Jerk_mean_X"     
-50. Variable name: "Frequency_Body_Accelerometer_Jerk_mean_Y"     
-51. Variable name: "Frequency_Body_Accelerometer_Jerk_mean_Z"     
-52. Variable name: "Frequency_Body_Accelerometer_Jerk_std_X"      
-53. Variable name: "Frequency_Body_Accelerometer_Jerk_std_Y"      
-54. Variable name: "Frequency_Body_Accelerometer_Jerk_std_Z"      
-55. Variable name: "Frequency_Body_Gyroscope_mean_X"              
-56. Variable name: "Frequency_Body_Gyroscope_mean_Y"              
-57. Variable name: "Frequency_Body_Gyroscope_mean_Z"              
-58. Variable name: "Frequency_Body_Gyroscope_std_X"
-59. Variable name: "Frequency_Body_Gyroscope_std_Y"
-60. Variable name: "Frequency_Body_Gyroscope_std_Z"
-61. Variable name: "Frequency_Body_Accelerometer_Mag_mean"       
-62. Variable name: "Frequency_Body_Accelerometer_Mag_std"        
-63. Variable name: "Frequency_Body_Accelerometer_JerkMag_mean"   
-64. Variable name: "Frequency_Body_Accelerometer_JerkMag_std"    
-65. Variable name: "Frequency_Body_Gyroscope_Mag_mean"           
-66. Variable name: "Frequency_Body_Gyroscope_Mag_std"            
-67. Variable name: "Frequency_Body_Gyroscope_JerkMag_mean"         
-68. Variable name: "Frequency_Body_Gyroscope_JerkMag_std"        
+| Variable #    | Variable name                               | Original name in features.txt     |
+| ------------- |---------------------------------------------| ----------------------------------|
+| 3             | "Time_Body_Accelerometer_mean_X"            | "tBodyAcc-mean()-X"               |
+| 4             | "Time_Body_Accelerometer_mean_Y"            | "tBodyAcc-mean()-Y"               |
+| 5             | "Time_Body_Accelerometer_mean_Z"            | "tBodyAcc-mean()-Z"               |
+| 6             | "Time_Body_Accelerometer_std_X"             | "tBodyAcc-std()-X"                |
+| 7             | "Time_Body_Accelerometer_std_Y"             | "tBodyAcc-std()-Y"                |
+| 8             | "Time_Body_Accelerometer_std_Z"             | "tBodyAcc-std()-Z"                |
+| 9             | "Time_Gravity_Accelerometer_mean_X"         | "tGravityAcc-mean()-X"            |
+| 10            | "Time_Gravity_Accelerometer_mean_Y"         | "tGravityAcc-mean()-Y"            |
+| 11            | "Time_Gravity_Accelerometer_mean_Z"         | "tGravityAcc-mean()-Z"            |
+| 12            | "Time_Gravity_Accelerometer_std_X"          | "tGravityAcc-std()-X"             |
+| 13            | "Time_Gravity_Accelerometer_std_Y"          | "tGravityAcc-std()-Y"             |
+| 14            | "Time_Gravity_Accelerometer_std_Z"          | "tGravityAcc-std()-Z"             |
+| 13            | "Time_Body_Accelerometer_Jerk_mean_X"       | "tBodyAccJerk-mean()-X"           |
+| 16            | "Time_Body_Accelerometer_Jerk_mean_Y"       | "tBodyAccJerk-mean()-Y"           |
+| 17            | "Time_Body_Accelerometer_Jerk_mean_Z"       | "tBodyAccJerk-mean()-Z"           |
+| 18            | "Time_Body_Accelerometer_Jerk_std_X"        | "tBodyAccJerk-std()-X"            |
+| 19            | "Time_Body_Accelerometer_Jerk_std_Y"        | "tBodyAccJerk-std()-Y"            |
+| 20            | "Time_Body_Accelerometer_Jerk_std_Z"        | "tBodyAccJerk-std()-Z"            |
+| 21            | "Time_Body_Gyroscope_mean_X"                | "tBodyGyro-mean()-X"              |
+| 22            | "Time_Body_Gyroscope_mean_Y"                | "tBodyGyro-mean()-Y"              |
+| 23            | "Time_Body_Gyroscope_mean_Z"                | "tBodyGyro-mean()-Z"              |
+| 24            | "Time_Body_Gyroscope_std_X"                 | "tBodyGyro-std()-X"               |
+| 25            | "Time_Body_Gyroscope_std_Y"                 | "tBodyGyro-std()-Y"               |
+| 26            | "Time_Body_Gyroscope_std_Z"                 | "tBodyGyro-std()-Z"               |
+| 27            | "Time_Body_Gyroscope_Jerk_mean_X"           | "tBodyGyroJerk-mean()-X"          |
+| 28            | "Time_Body_Gyroscope_Jerk_mean_Y"           | "tBodyGyroJerk-mean()-Y"          |
+| 29            | "Time_Body_Gyroscope_Jerk_mean_Z"           | "tBodyGyroJerk-mean()-Z"          |
+| 30            | "Time_Body_Gyroscope_Jerk_std_X"            | "tBodyGyroJerk-std()-X"           |
+| 31            | "Time_Body_Gyroscope_Jerk_std_Y"            | "tBodyGyroJerk-std()-Y"           |
+| 32            | "Time_Body_Gyroscope_Jerk_std_Z"            | "tBodyGyroJerk-std()-Z"           |
+| 33            | "Time_Body_Accelerometer_Mag_mean"          | "tBodyAccMag-mean()"              |
+| 34            | "Time_Body_Accelerometer_Mag_std"           | "tBodyAccMag-std()"               |
+| 35            | "Time_Gravity_Accelerometer_Mag_mean"       | "tGravityAccMag-mean()"           |
+| 36            | "Time_Gravity_Accelerometer_Mag_std"        | "tGravityAccMag-std()"            |
+| 37            | "Time_Body_Accelerometer_JerkMag_mean"      | "tBodyAccJerkMag-mean()"          |
+| 38            | "Time_Body_Accelerometer_JerkMag_std"       | "tBodyAccJerkMag-std()"           |
+| 39            | "Time_Body_Gyroscope_Mag_mean"              | "tBodyGyroMag-mean()"             |
+| 40            | "Time_Body_Gyroscope_Mag_std"               | "tBodyGyroMag-std()"              |
+| 41            | "Time_Body_Gyroscope_JerkMag_mean"          | "tBodyGyroJerkMag-mean()"         |
+| 42            | "Time_Body_Gyroscope_JerkMag_std"           | "tBodyGyroJerkMag-std()"          |
+| 43            | "Frequency_Body_Accelerometer_mean_X"       | "fBodyAcc-mean()-X"               |
+| 44            | "Frequency_Body_Accelerometer_mean_Y"       | "fBodyAcc-mean()-Y"               |
+| 45            | "Frequency_Body_Accelerometer_mean_Z"       | "fBodyAcc-mean()-Z"               |
+| 46            | "Frequency_Body_Accelerometer_std_X"        | "fBodyAcc-std()-X"                |
+| 47            | "Frequency_Body_Accelerometer_std_Y"        | "fBodyAcc-std()-Y"                |
+| 48            | "Frequency_Body_Accelerometer_std_Z"        | "fBodyAcc-std()-Z"                |
+| 49            | "Frequency_Body_Accelerometer_Jerk_mean_X"  | "fBodyAccJerk-mean()-X"           |
+| 50            | "Frequency_Body_Accelerometer_Jerk_mean_Y"  | "fBodyAccJerk-mean()-Y"           |
+| 51            | "Frequency_Body_Accelerometer_Jerk_mean_Z"  | "fBodyAccJerk-mean()-Z"           |
+| 52            | "Frequency_Body_Accelerometer_Jerk_std_X"   | "fBodyAccJerk-std()-X"            |
+| 53            | "Frequency_Body_Accelerometer_Jerk_std_Y"   | "fBodyAccJerk-std()-Y"            |
+| 54            | "Frequency_Body_Accelerometer_Jerk_std_Z"   | "fBodyAccJerk-std()-Z"            |
+| 55            | "Frequency_Body_Gyroscope_mean_X"           | "fBodyGyro-mean()-X"              |
+| 56            | "Frequency_Body_Gyroscope_mean_Y"           | "fBodyGyro-mean()-Y"              |
+| 57            | "Frequency_Body_Gyroscope_mean_Z"           | "fBodyGyro-mean()-Z"              |
+| 58            | "Frequency_Body_Gyroscope_std_X"            | "fBodyGyro-std()-X"               |
+| 59            | "Frequency_Body_Gyroscope_std_Y"            | "fBodyGyro-std()-Y"               |
+| 60            | "Frequency_Body_Gyroscope_std_Z"            | "fBodyGyro-std()-Z"               |
+| 61            | "Frequency_Body_Accelerometer_Mag_mean"     | "fBodyAccMag-mean()"              |
+| 62            | "Frequency_Body_Accelerometer_Mag_std"      | "fBodyAccMag-std()"               |
+| 63            | "Frequency_Body_Accelerometer_JerkMag_mean" | "fBodyBodyAccJerkMag-mean()"      |
+| 64            | "Frequency_Body_Accelerometer_JerkMag_std"  | "fBodyBodyAccJerkMag-std()"       |
+| 65            | "Frequency_Body_Gyroscope_Mag_mean"         | "fBodyBodyGyroMag-mean()"         |
+| 66            | "Frequency_Body_Gyroscope_Mag_std"          | "fBodyBodyGyroMag-std()"          |
+| 67            | "Frequency_Body_Gyroscope_JerkMag_mean"     | "fBodyBodyGyroJerkMag-mean()"     |
+| 68            | "Frequency_Body_Gyroscope_JerkMag_std"      | "fBodyBodyGyroJerkMag-std()"      |
