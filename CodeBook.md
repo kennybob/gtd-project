@@ -2,8 +2,7 @@ Codebook
 ===========
 Data dictionary for file: tidyMeans.txt
 
-Variables:
-"WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS","SITTING","STANDING","LAYING"
+## Variables:
 
 1. Variable name: "SubjectID"                     
  * Data type: Numeric(1-30)  
@@ -13,6 +12,18 @@ Variables:
  * Discrete set: {"WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS","SITTING","STANDING","LAYING"}  
  * Data Source: test\y_test.txt, train\y_train.txt  
  * Transformed using: Mapping provided in activity_labels.txt    
+ 
+### Each of the following variables have as attributes:
+ * Data type: Numeric
+ * Range: normalized and bounded within [-1,1]
+ * Source: test\X_test.txt, train\X_train.txt 
+
+| Variable #    | Variable name         | Original name in features.txt  |
+| ------------- |-----------------------| -------------------------------|
+| 3             | xxxxxxxxxxxxx         | ffffffffffffffffffffffffffffff |
+| 4             | rtrtertert            | cgvfdgfdgfd                    |
+| 4             | are neat              | fgfffffffffffffffffffffffffffff|
+ 
 3. Variable name: "Time_Body_Accelerometer_mean_X"                                                                
 4. Variable name: "Time_Body_Accelerometer_mean_Y"                                                               
 5. Variable name: "Time_Body_Accelerometer_mean_Z"              
