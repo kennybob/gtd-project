@@ -7,8 +7,8 @@ Data dictionary for file: tidyMeans.txt
 1. Variable name: "SubjectID"                     
  * Data type: Numeric(1-30)  
  * Data Source: 
-   ** test\subject_test.txt 
-   ** train\subject_train.txt    
+    * test\subject_test.txt 
+    * train\subject_train.txt    
 2. Variable name: "activity"  
  * Data type: Character   
  * Discrete set: {"WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS","SITTING","STANDING","LAYING"}  
@@ -21,7 +21,9 @@ Data dictionary for file: tidyMeans.txt
 ##### Each of the following variables have as attributes:
  * Data type: Numeric
  * Range: normalized and bounded within [-1,1]
- * Source: test\X_test.txt, train\X_train.txt 
+ * Data Source: 
+    * test\X_test.txt
+    * train\X_train.txt 
 
 | Variable #    | Variable name                               | Original name in features.txt     |
 | ------------- |---------------------------------------------| ----------------------------------|
