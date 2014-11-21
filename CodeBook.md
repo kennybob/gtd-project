@@ -24,6 +24,7 @@ Data dictionary for file: tidyMeans.txt
  * Data Source: 
     * test\X_test.txt
     * train\X_train.txt 
+ * Data Transformation: mean(), grouped by "SubjectID" and "activity" 
 
 | Variable #    | Variable name                               | Original name in features.txt     |
 | ------------- |---------------------------------------------| ----------------------------------|
