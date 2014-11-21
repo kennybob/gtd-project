@@ -6,11 +6,15 @@ Data dictionary for file: tidyMeans.txt
 
 1. Variable name: "SubjectID"                     
  * Data type: Numeric(1-30)  
- * Data Source: test\subject_test.txt, train\subject_train.txt    
+ * Data Source: 
+   ** test\subject_test.txt 
+   ** train\subject_train.txt    
 2. Variable name: "activity"  
  * Data type: Character   
  * Discrete set: {"WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS","SITTING","STANDING","LAYING"}  
- * Data Source: test\y_test.txt, train\y_train.txt  
+ * Data Source: 
+  ** test\y_test.txt 
+  ** train\y_train.txt  
  * Transformed using: Mapping provided in activity_labels.txt    
  
 ##### Each of the following variables have as attributes:
